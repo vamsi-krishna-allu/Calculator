@@ -8,11 +8,12 @@
 
     <TextView
         android:id="@+id/textViewInput"
-        android:layout_width="359dp"
-        android:layout_height="211dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginBottom="75dp"
         android:elevation="60dp"
         android:maxLines="3"
         android:paddingStart="6dp"
@@ -21,36 +22,34 @@
         android:textAlignment="textStart"
         android:textColor="@color/black"
         android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="368dp"
-        android:layout_height="257dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="80dp"
+        android:layout_width="349dp"
+        android:layout_height="245dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewInput">
 
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:showDividers="middle|beginning|end">
 
             <Button
                 android:id="@+id/button1"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="63dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/dark_yellow"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/one"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -59,10 +58,10 @@
                 android:id="@+id/button2"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="63dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/dark_yellow"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/two"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -71,10 +70,10 @@
                 android:id="@+id/button3"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="63dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/dark_yellow"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/three"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -82,12 +81,12 @@
             <Button
                 android:id="@+id/buttonPlus"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="104dp"
-                android:layout_height="63dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/teal_700"
                 android:elevation="60dp"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/plus"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -95,16 +94,17 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:showDividers="middle|beginning">
 
             <Button
                 android:id="@+id/button4"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="63dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/dark_yellow"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/four"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -113,10 +113,10 @@
                 android:id="@+id/button5"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="63dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/dark_yellow"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/five"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -125,10 +125,10 @@
                 android:id="@+id/button6"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="63dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/dark_yellow"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/six"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -137,28 +137,29 @@
                 android:id="@+id/buttonMinus"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="63dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/teal_700"
                 android:elevation="60dp"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/minus"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:showDividers="middle|beginning|end">
 
             <Button
                 android:id="@+id/button7"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="63dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/dark_yellow"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/seven"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -167,10 +168,10 @@
                 android:id="@+id/button8"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="63dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/dark_yellow"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/eight"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -179,10 +180,10 @@
                 android:id="@+id/button9"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="63dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/dark_yellow"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/nine"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -191,11 +192,11 @@
                 android:id="@+id/buttonMultiply"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="63dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/teal_700"
                 android:elevation="60dp"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/multiply"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -203,16 +204,17 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:showDividers="middle|beginning|end">
 
             <Button
                 android:id="@+id/buttonDecimal"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="63dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/dark_yellow"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/decimal"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -221,10 +223,10 @@
                 android:id="@+id/button0"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/dark_yellow"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/zero"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -233,10 +235,10 @@
                 android:id="@+id/buttonEqual"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="62dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/dark_yellow"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/equals"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -245,33 +247,44 @@
                 android:id="@+id/buttonDivide"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="62dp"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/teal_700"
                 android:elevation="60dp"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/divide"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
         </TableRow>
-    </TableLayout>
 
-    <Button
-        android:id="@+id/buttonClear"
-        android:layout_width="368dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="300dp"
-        android:elevation="60dp"
-        android:insetLeft="6dp"
-        android:insetTop="6dp"
-        android:insetRight="6dp"
-        android:text="@string/clear"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewInput"
-        app:layout_constraintVertical_bias="0.397" />
+        <TableRow android:showDividers="middle|beginning|end">
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_span="2"
+                android:backgroundTint="@color/teal_700"
+                android:elevation="60dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/clear"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_span="2"
+                android:backgroundTint="@color/teal_700"
+                android:elevation="60dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/delete"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

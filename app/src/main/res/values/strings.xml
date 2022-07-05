@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">CALCULATOR</string>
-    <string name="clear">CLEAR</string>
+    <string name="clear">CL</string>
+    <string name="delete">DEL</string>
     <string name="divide">/</string>
     <string name="equals">=</string>
     <string name="zero">0</string>
